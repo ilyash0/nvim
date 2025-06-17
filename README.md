@@ -11,12 +11,10 @@ git clone https://github.com/ilyash0/nvim $ENV:USERPROFILE\AppData\Local\nvim
 ```
 ## Linux
 ```Bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
 
-chmod u+x nvim.appimage
-
-sudo mv nvim.appimage /usr/local/bin/nvim
-sudo chmod 755 /usr/local/bin/nvim
+sudo apt update
+sudo apt install neovim
 
 git clone https://github.com/ilyash0/nvim ~/.config/nvim && nvim
 ```
